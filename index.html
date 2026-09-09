@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asado Viernes · Carta de Tragos</title>
+  <meta name="description" content="Carta de tragos y bebidas del Asado Viernes.">
+  <style>
+    :root{
+      --cream:#f5f0e4;
+      --paper:#fbf8f0;
+      --green:#19362c;
+      --gold:#b08a4a;
+      --ink:#18231f;
+      --muted:#65706a;
+      --line:rgba(25,54,44,.22);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;background:var(--cream);color:var(--ink);
+      font-family:Georgia,"Times New Roman",serif;
+      line-height:1.45;
+    }
+    .page{max-width:760px;margin:auto;padding:22px 16px 42px}
+    .frame{
+      border:1px solid var(--green);
+      background:var(--paper);
+      padding:28px 18px 34px;
+      box-shadow:0 8px 30px rgba(0,0,0,.06);
+    }
+    header{text-align:center}
+    .mark{
+      width:42px;height:42px;margin:0 auto 10px;
+      border:1px solid var(--green);border-radius:50%;
+      display:grid;place-items:center;color:var(--green);
+      font-size:21px;
+    }
+    .eyebrow{
+      letter-spacing:.32em;text-transform:uppercase;font-size:11px;
+      color:var(--green);margin:0 0 7px;
+    }
+    h1{
+      margin:0;color:var(--green);font-size:34px;letter-spacing:.08em;
+      text-transform:uppercase;line-height:1.05;
+    }
+    .tagline{
+      margin:12px 0 0;color:var(--muted);font-size:13px;
+      letter-spacing:.16em;text-transform:uppercase;
+    }
+    .rule{height:1px;background:var(--line);margin:25px 0}
+    h2{
+      text-align:center;color:var(--green);font-size:20px;
+      letter-spacing:.18em;text-transform:uppercase;margin:0 0 18px;
+    }
+    .cocktails{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .card{
+      border:1px solid var(--line);padding:18px 14px 16px;
+      background:#fffdf8;
+    }
+    .emoji{font-family:"Apple Color Emoji","Segoe UI Emoji",sans-serif;font-size:29px}
+    .name{
+      color:var(--green);font-size:18px;font-weight:bold;
+      letter-spacing:.08em;text-transform:uppercase;margin:7px 0 9px;
+    }
+    .ingredients{font-size:14px;margin:0;color:#303a35}
+    .note{font-size:13px;font-style:italic;color:var(--muted);margin:11px 0 0}
+    .drinks{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .group{padding:15px 10px;border-top:1px solid var(--line)}
+    .group h3{
+      margin:0 0 8px;color:var(--green);font-size:14px;
+      letter-spacing:.1em;text-transform:uppercase;
+    }
+    .group p{margin:0;font-size:14px}
+    .footer{
+      margin-top:28px;text-align:center;color:var(--green);
+      font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+    }
+    .hint{
+      text-align:center;margin-top:20px;font-size:12px;color:var(--muted);
+      font-family:Arial,sans-serif;
+    }
+    @media (max-width:560px){
+      .page{padding:10px 8px 28px}
+      .frame{padding:24px 13px 28px}
+      h1{font-size:29px}
+      .cocktails,.drinks{grid-template-columns:1fr}
+      .card{padding:17px 15px}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="frame">
+      <header>
+        <div class="mark">🔥</div>
+        <p class="eyebrow">Asado Viernes</p>
+        <h1>Carta de Tragos</h1>
+        <p class="tagline">Buena comida · buena compañía</p>
+      </header>
+
+      <div class="rule"></div>
+
+      <section>
+        <h2>Tragos</h2>
+        <div class="cocktails">
+          <article class="card">
+            <div class="emoji">🍊</div>
+            <div class="name">Aperol Spritz</div>
+            <p class="ingredients">Aperol · Espumante Brut · Soda · Naranja · Hielo</p>
+            <p class="note">Fresco, cítrico y fácil de tomar.</p>
+          </article>
+
+          <article class="card">
+            <div class="emoji">🍋</div>
+            <div class="name">Pisco Sour</div>
+            <p class="ingredients">Pisco Alto del Carmen · Limón · Jarabe de goma · Clara de huevo · Angostura</p>
+            <p class="note">Clásico chileno, suave y espumoso.</p>
+          </article>
+
+          <article class="card">
+            <div class="emoji">🌿</div>
+            <div class="name">Gin Tonic</div>
+            <p class="ingredients">Hendrick’s · Tónica · Lima · Hielo</p>
+            <p class="note">Fresco y aromático.</p>
+          </article>
+
+          <article class="card">
+            <div class="emoji">🫚</div>
+            <div class="name">Moscow Mule</div>
+            <p class="ingredients">Vodka · Ginger Beer · Lima · Menta · Hielo</p>
+            <p class="note">Refrescante, cítrico y con ese toque picante del ginger beer.</p>
+          </article>
+
+          <article class="card">
+            <div class="emoji">🍊</div>
+            <div class="name">Vodka Naranja</div>
+            <p class="ingredients">Vodka · Jugo de naranja · Hielo</p>
+            <p class="note">Simple, fresco y directo.</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="rule"></div>
+
+      <section>
+        <h2>Bebidas disponibles</h2>
+        <div class="drinks">
+          <div class="group">
+            <h3>🍺 Cervezas</h3>
+            <p>Kunstmann Torobayo<br>Austral Calafate</p>
+          </div>
+          <div class="group">
+            <h3>🍷 Vinos</h3>
+            <p>Santa Ema Gran Reserva Merlot<br>Santa Ema Gran Reserva Carmenere</p>
+          </div>
+          <div class="group">
+            <h3>🔥 Para los valientes</h3>
+            <p>Fireball</p>
+          </div>
+          <div class="group">
+            <h3>🥤 Sin alcohol</h3>
+            <p>Coca-Cola Zero<br>Ginger Ale<br>Agua con gas<br>Agua filtrada<br>Jugo de naranja</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="rule"></div>
+      <div class="footer">Aquí también se brindan grandes amistades</div>
+      <div class="hint">Carta digital · Asado Viernes</div>
+    </div>
+  </main>
+</body>
+</html>
